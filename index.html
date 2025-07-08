@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños Karen!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #FF9EB7;
+            --secondary: #FF6B8B;
+            --accent: #FFD1DC;
+            --dark: #5A2D42;
+            --light: #FFF5F7;
+            --gold: #D4AF37;
+            --rose-gold: #E0BFB8;
+            --confetti-1: #FF9EB7;
+            --confetti-2: #FFB7C5;
+            --confetti-3: #FFD1DC;
+            --confetti-4: #FF6B8B;
+            --confetti-5: #D4AF37;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #FFF5F7 0%, #FFE5EB 100%);
+            color: var(--dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            padding: 1rem;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            opacity: 0.05;
+            z-index: -1;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 600px;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeInUp 1s 0.3s forwards;
+            margin-bottom: 1rem;
+            border: 1px solid var(--accent);
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, var(--confetti-1), var(--confetti-2), var(--confetti-3), var(--confetti-4), var(--confetti-5));
+            animation: rainbow 3s linear infinite;
+        }
+        
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark);
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+            background: linear-gradient(45deg, var(--secondary), var(--confetti-4), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h1::after {
+            content: '🎉🎂🎀';
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.5rem;
+            opacity: 0.8;
+        }
+        
+        h2 {
+            font-family: 'Pacifico', cursive;
+            color: var(--secondary);
+            font-size: clamp(1.4rem, 3.5vw, 1.8rem);
+            margin: 1.5rem 0;
+            font-weight: 400;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            border-radius: 3px;
+        }
+        
+        .age-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin: 1.5rem 0;
+            position: relative;
+        }
+        
+        .age {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3.5rem, 10vw, 5.5rem);
+            font-weight: 700;
+            color: var(--gold);
+            position: relative;
+            animation: pulse 1.5s infinite;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .cake-img {
+            width: clamp(70px, 20vw, 100px);
+            height: clamp(70px, 20vw, 100px);
+            object-fit: contain;
+            animation: gentlePulse 3s ease-in-out infinite;
+            filter: drop-shadow(0 5px 5px rgba(0,0,0,0.1));
+        }
+        
+        @keyframes gentlePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .message {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            line-height: 1.6;
+            margin: 1.5rem 0;
+            color: var(--dark);
+            animation: fadeIn 1.5s;
+            font-weight: 500;
+            position: relative;
+            padding: 0 0.5rem;
+        }
+        
+        .message::before, .message::after {
+            content: '"';
+            font-size: 2rem;
+            color: var(--gold);
+            position: absolute;
+            opacity: 0.3;
+        }
+        
+        .message::before {
+            top: -15px;
+            left: -5px;
+        }
+        
+        .message::after {
+            bottom: -30px;
+            right: -5px;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--rose-gold), transparent);
+            margin: 1.5rem auto;
+            width: 60%;
+            border: none;
+        }
+        
+        /* Estilos para el sobre de carta */
+        .envelope-container {
+            margin: 1.5rem 0;
+            position: relative;
+            z-index: 5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .envelope-img {
+            width: clamp(180px, 50vw, 250px);
+            height: 400px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+        }
+        
+        .envelope-img:hover {
+            transform: translateY(-5px);
+        }
+        
+        .open-me {
+            background: var(--gold);
+            color: white;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-family: 'Pacifico', cursive;
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            animation: bounce 2s infinite;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+        
+        /* Estilo para la fecha especial */
+        .special-date {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            color: var(--secondary);
+            margin: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .special-date::before, .special-date::after {
+            content: '✨';
+            margin: 0 8px;
+        }
+        
+        .letter-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s ease;
+        }
+        
+        .letter-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        
+        .letter-content {
+            background: #fff9f0;
+            width: 90%;
+            max-width: 600px;
+            max-height: 90vh;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+            border: 3px solid var(--gold);
+            position: relative;
+            transform: scale(0.9);
+            opacity: 0;
+            transition: all 0.5s ease;
+            overflow-y: auto;
+            font-family: 'Dancing Script', cursive;
+            color: #5A2D42;
+        }
+        
+        .letter-overlay.active .letter-content {
+            transform: scale(1);
+            opacity: 1;
+        }
+        
+        .letter-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 30px;
+            background: linear-gradient(to bottom, rgba(255,249,240,1) 0%, rgba(255,249,240,0) 100%);
+            z-index: 1;
+        }
+        
+        .letter-content::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 30px;
+            background: linear-gradient(to top, rgba(255,249,240,1) 0%, rgba(255,249,240,0) 100%);
+            z-index: 1;
+        }
+        
+        .letter-text {
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            line-height: 1.6;
+            margin-bottom: 1.2rem;
+            text-align: left;
+        }
+        
+        .letter-date {
+            text-align: right;
+            font-style: italic;
+            margin-bottom: 1rem;
+            font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        }
+        
+        .letter-signature {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--gold);
+            text-align: right;
+            margin-top: 1.5rem;
+            position: relative;
+        }
+        
+        .letter-signature::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 100px;
+            height: 1px;
+            background: var(--gold);
+        }
+        
+        .close-letter {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+            background: rgba(255,255,255,0.2);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .close-letter:hover {
+            background: rgba(255,255,255,0.3);
+            transform: rotate(90deg);
+        }
+        
+        .signature {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: var(--gold);
+            margin: 1rem 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .signature::before, .signature::after {
+            content: '✨';
+            font-size: 1rem;
+        }
+        
+        .hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+        
+        .heart {
+            position: absolute;
+            font-size: 1.5rem;
+            color: var(--confetti-4);
+            animation: float 4s ease-in-out infinite;
+            opacity: 0;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .confetti {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            opacity: 0;
+            animation: confettiFall 5s linear forwards;
+            z-index: 100;
+        }
+        
+        @keyframes confettiFall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        .birthday-emoji {
+            font-size: 1.2rem;
+            margin: 0 3px;
+            animation: bounce 2s infinite;
+            display: inline-block;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>¡FELIZ CUMPLEAÑOS KAREN!</h1>
+        <h2>Que este día esté lleno de magia y alegría ✨</h2>
+        
+        <div class="age-container">
+            <div class="age">25</div>
+            <img src="2qco.gif" alt="Pastel de cumpleaños" class="cake-img">
+        </div>
+        
+        <div class="message">
+            Karen, en tus 25 años de vida has iluminado el mundo con tu sonrisa. 
+            Hoy celebramos no solo tu cumpleaños, sino a la persona maravillosa que eres y siempre serás. 
+            Que este nuevo capítulo esté lleno de sueños cumplidos, amor infinito y momentos inolvidables. 
+            A tus 25, ya eres alguien que siempre vale y valdrá la pena. ¡Eres una mujer increíble! 🥂🎈
+        </div>
+        
+        <hr class="divider">
+        
+        <!-- Sobre de carta interactivo -->
+        <div class="envelope-container">
+            <div class="open-me">¡ÁBREME!</div>
+            <img src="carta.gif" alt="Sobre de carta" class="envelope-img" id="envelope">
+        </div>
+        
+        <!-- Sección de fecha especial -->
+        <div class="special-date">8 de Julio - Un día para recordar</div>
+    
+    </div>
+    
+    <!-- Overlay para la carta -->
+    <div class="letter-overlay" id="letterOverlay">
+        <span class="close-letter" id="closeLetter">&times;</span>
+        <div class="letter-content">
+            <div class="letter-date">8 de Julio, 2025</div>
+            <div class="letter-text">
+                <p>Querida Karen,</p> <p>Hoy es un día especial y quiero aprovechar para enviarte mis mejores deseos. Lamento sinceramente si en los últimos días no me comporté como debí, y te pido disculpas de corazón por cualquier dolor o molestia que haya podido causarte. Reconozco mis errores y me duele que las cosas hayan llegado a este punto.</p> <p>A pesar de todo, sigo teniendo un profundo cariño y admiración por ti. Eres una persona increíble, llena de luz, y te mereces lo mejor que la vida tiene para ofrecer.</p> <p>Que este cumpleaños sea solo el inicio de un nuevo capítulo lleno de alegrías, nuevos logros y momentos felices. Espero que este nuevo año te acerque más a tus sueños y que encuentres mucha paz y felicidad en cada paso que des.</p> <p>¡Feliz cumpleaños, Karen! Te deseo un día increíble y un año maravilloso, rodeada de amor y de todo lo que te hace feliz.</p>
+            </div>
+            <div class="letter-signature">
+                <p>Con todo mi cariño,</p>
+                <p>Att: Bragahm</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="hearts" id="hearts"></div>
+    
+    <script>
+        // Animación de corazones flotantes
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = ['❤️', '🎉', '🎂', '🥳', '🎁', '💐', '🌸', '💖'][Math.floor(Math.random() * 8)];
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 3 + 3 + 's';
+            heart.style.fontSize = Math.random() * 15 + 10 + 'px';
+            heart.style.animationDelay = Math.random() * 2 + 's';
+            document.getElementById('hearts').appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 6000);
+        }
+        
+        // Crear corazones periódicamente
+        setInterval(createHeart, 400);
+        
+        // Efecto de confeti
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            confetti.style.left = Math.random() * 100 + 'vw';
+            
+            const colors = [
+                'var(--confetti-1)', 
+                'var(--confetti-2)', 
+                'var(--confetti-3)', 
+                'var(--confetti-4)', 
+                'var(--confetti-5)'
+            ];
+            confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            
+            // Formas aleatorias
+            const shapes = ['circle', 'square', 'triangle'];
+            const shape = shapes[Math.floor(Math.random() * shapes.length)];
+            
+            if (shape === 'circle') {
+                confetti.style.borderRadius = '50%';
+            } else if (shape === 'triangle') {
+                confetti.style.width = '0';
+                confetti.style.height = '0';
+                confetti.style.borderLeft = '6px solid transparent';
+                confetti.style.borderRight = '6px solid transparent';
+                confetti.style.borderBottom = `12px solid ${confetti.style.backgroundColor}`;
+                confetti.style.background = 'transparent';
+            }
+            
+            confetti.style.width = (shape === 'triangle' ? '0' : Math.random() * 10 + 6 + 'px');
+            confetti.style.height = (shape === 'triangle' ? '0' : Math.random() * 10 + 6 + 'px');
+            confetti.style.animationDuration = Math.random() * 3 + 2 + 's';
+            document.body.appendChild(confetti);
+            
+            setTimeout(() => {
+                confetti.remove();
+            }, 5000);
+        }
+        
+        // Interacción con el sobre
+        const envelope = document.getElementById('envelope');
+        const letterOverlay = document.getElementById('letterOverlay');
+        const closeLetter = document.getElementById('closeLetter');
+        
+        envelope.addEventListener('click', function() {
+            letterOverlay.classList.add('active');
+            
+            // Lanzar confeti al abrir la carta
+            for (let i = 0; i < 80; i++) {
+                setTimeout(createConfetti, i * 30);
+            }
+            
+            // Reproducir sonido de cumpleaños
+            const audio = new Audio('Antonio Aguilar - Cumpleaños.mp3');
+            audio.play();
+        });
+        
+        closeLetter.addEventListener('click', function() {
+            letterOverlay.classList.remove('active');
+        });
+        
+        // Cerrar al hacer clic fuera de la imagen
+        letterOverlay.addEventListener('click', function(e) {
+            if (e.target === letterOverlay) {
+                letterOverlay.classList.remove('active');
+            }
+        });
+        
+        // Efecto de rebote al cargar
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const age = document.querySelector('.age');
+                age.style.animation = 'none';
+                setTimeout(() => {
+                    age.style.animation = 'pulse 1.5s infinite';
+                }, 10);
+            }, 1500);
+            
+            // Añadir emojis decorativos
+            const message = document.querySelector('.message');
+            const emojis = ['🎀', '💝', '🎊', '🎈', '💌'];
+            emojis.forEach(emoji => {
+                const span = document.createElement('span');
+                span.className = 'birthday-emoji';
+                span.textContent = emoji;
+                span.style.animationDelay = `${Math.random() * 2}s`;
+                message.appendChild(span);
+            });
+        });
+    </script>
+</body>
+</html>
