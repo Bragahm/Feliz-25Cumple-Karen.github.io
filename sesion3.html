@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 3: Integración Curricular con Scratch - Scratch Educativo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo flex items-center gap-3">
+                    <div class="scratch-icon-placeholder" style="width:32px; height:32px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                        <img src="assets/icono.png" alt="Ícono Scratch" style="width:24px; height:24px; object-fit:contain;">
+                    </div>
+                    <h1>Scratch Educativo</h1>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sesion1.html" class="nav-link">Sesión 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sesion2.html" class="nav-link">Sesión 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sesion3.html" class="nav-link active">Sesión 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sesion4.html" class="nav-link">Sesión 4</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Sesión 3: Programación Creativa con Comunicación, Paralelismo y Escenarios</h1>
+                    <p class="hero-subtitle">Aprenderás a comunicar sprites, ejecutar acciones en paralelo, usar operadores y cambiar fondos para crear proyectos interactivos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="objectives-list">
+                    <h3>Objetivos de Aprendizaje</h3>
+                    <ul>
+                        <li>Coordinar las acciones de dos o más sprites utilizando mensajes para sincronizar eventos en un proyecto interactivo.</li>
+                        <li>Ejecutar de forma simultánea diferentes scripts que controlen comportamientos independientes en un mismo sprite o escenario.</li>
+                        <li>Aplicar operadores matemáticos y lógicos para resolver cálculos y tomar decisiones dentro de un juego o animación.</li>
+                        <li>Cambiar automáticamente el fondo del escenario para representar distintas escenas o momentos en una historia interactiva.</li>
+                    </ul>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>Comunicación entre Objetos (Mensajes)</h3>
+                        <p style="text-align: justify;">En Scratch, la comunicación entre objetos es el intercambio de mensajes entre sprites o entre un sprite y el escenario para coordinar acciones y sincronizar eventos dentro de un proyecto.</p>
+                        
+                        <div class="media-container">
+                            <div class="media-placeholder">
+                                <img src="assets/comunicacion.png" style="max-width:100%; height:auto; display: block;">
+                            </div>
+                        </div>
+
+                        <h4>Tipos de comunicación:</h4>
+                        <ul>
+                            <li><strong>Mensajes simples:</strong> Activar acciones en otros objetos</li><P></P>
+                            <li><strong>Mensajes con espera:</strong> Sincronizar secuencias</li><P></P>
+                            
+                        </ul>
+
+                        <h4>Ejemplo práctico:</h4>
+                        <p>Cuando el gato toca una manzana, el gato envía un mensaje "comer" y la manzana desaparece. Coordinar acciones entre múltiples objetos.</p>
+                        
+                        <div class="resource-grid">
+                            <div class="resource-item">
+                                <h4>Ver Ejemplo en Scratch</h4>
+                                <p>Proyecto: Mensajes</p>
+                                <a href="https://scratch.mit.edu/projects/1204823593/" target="_blank" class="btn btn-primary">Abrir Proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <h3>Programación Multihilo</h3>
+                        <p style="text-align: justify;">En Scratch, la programación multihilo es la ejecución simultánea de varios scripts o acciones, permitiendo que un mismo proyecto realice diferentes tareas al mismo tiempo.</p>
+                        
+                        <div class="media-container">
+                            <div class="media-placeholder">
+                                <img src="assets/multihilo.png" style="max-width:100%; height:auto; display: block;">
+                            </div>
+                        </div>
+
+                        <h4>Conceptos de multihilo:</h4>
+                        <ul>
+                            <li><strong>Hilos paralelos:</strong> Scripts que se ejecutan simultáneamente</li><P></P>
+                            <li><strong>Eventos independientes:</strong> Cada hilo responde a su propio evento</li><P></P>
+                        </ul>
+
+                        <h4>Ejemplo práctico:</h4>
+                        <p>Un hilo controla el movimiento del gato con las flechas.</p>
+                        
+                        <div class="resource-grid">
+                            <div class="resource-item">
+                                <h4>Ver Ejemplo en Scratch</h4>
+                                <p>Proyecto: Multihilo</p>
+                                <a href="https://scratch.mit.edu/projects/1204827512/" target="_blank" class="btn btn-primary">Abrir Proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title">Operadores y Fondos de Escenario</h2>
+                
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>Operadores</h3>
+                        <p style="text-align: justify;">En Scratch, los operadores son bloques que permiten realizar cálculos matemáticos, comparar valores y combinar condiciones lógicas para controlar el comportamiento de un proyecto.</p>
+                        
+                        <div class="media-container">
+                            <div class="media-placeholder">
+                                <img src="assets/operador.png" style="max-width:100%; height:auto; display: block;">
+                            </div>
+                        </div>
+                        <h4>Operadores matemáticos:</h4>
+                        <ul>
+                            <li><strong>Suma (+):</strong> Combinar valores, incrementar contadores</li><P></P>
+                            <li><strong>Resta (-):</strong> Calcular diferencias, decrementar</li><P></P>
+                            <li><strong>Multiplicación (*):</strong> Escalamiento, área, volumen</li><P></P>
+                            <li><strong>División (/):</strong> Promedios, proporciones</li><P></P>
+                        </ul>
+
+                        <h4>Operadores lógicos:</h4>
+                        <ul>
+                            <li><strong>Mayor que (>):</strong> Comparar valores numéricos</li><P></P>
+                            <li><strong>Menor que (<):</strong> Establecer límites</li><P></P>
+                            <li><strong>Igual a (=):</strong> Verificar coincidencias</li><P></P>
+                           
+                        </ul>
+
+                        <h4>Ejemplo práctico:</h4>
+                        <p>Calcular la distancia en base a la velocidad por el tiempo.</p>
+                        
+                        <div class="resource-grid">
+                            <div class="resource-item">
+                                <h4>Ver Ejemplo en Scratch</h4>
+                                <p>Proyecto: Operadores</p>
+                                <a href="https://scratch.mit.edu/projects/1204830768/" target="_blank" class="btn btn-primary">Abrir Proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <h3>Fondos del Escenario</h3>
+                        <p style="text-align: justify;">En Scratch, los fondos son imágenes del escenario que representan el entorno visual del proyecto y pueden cambiarse para mostrar diferentes lugares, momentos o situaciones.</p>
+                        
+                        <div class="media-container">
+                            <div class="media-placeholder">
+                                <img src="assets/fondo.png" style="max-width:100%; height:auto; display: block;">
+                            </div>
+                        </div>
+
+                        <h4>Gestión de fondos:</h4>
+                        <ul>
+                            <li><strong>Biblioteca de fondos:</strong> Fondos prediseñados</li><p></p>
+                            <li><strong>Pintar fondo:</strong> Crear fondos personalizados</li><p></p>
+                            <li><strong>Importar fondo:</strong> Usar imágenes externas</li><p></p>
+                        </ul>
+
+                        <h4>Ejemplo práctico:</h4>
+                        <p>Cambiar el fondo del escenario cuando el gato llega a un punto específico, creando diferentes ambientes.</p>
+                        
+                        <div class="resource-grid">
+                            <div class="resource-item">
+                                <h4>Ver Ejemplo en Scratch</h4>
+                                <p>Proyecto: Fondos Dinámicos</p>
+                                <a href="https://scratch.mit.edu/projects/1204834930/" target="_blank" class="btn btn-primary">Abrir Proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title">Simulación de Fenómenos</h2>
+                
+                <div class="content-card">
+                    <p>La simulación de fenómenos en Scratch es la recreación virtual de procesos científicos sencillos, usando variables para guardar datos, operadores para calcular y aleatoriedad para imitar la variabilidad natural, permitiendo observar y experimentar cómo cambian bajo distintas condiciones.</p>
+                    <div class="content-grid">
+                        <div class="content-card">
+                            <div class="media-container">
+                            <div class="media-placeholder">
+                                <img src="assets/simulacion.png" style="max-width:100%; height:auto; display: block;">
+                            </div>
+                        </div>
+                            <h4>Ejemplos de simulaciones de fenómenos científicos y naturales:</h4>
+                            <ul>
+                                <li><strong>🌱 Biología y Ciencias Naturales - Fotosíntesis:</strong> Una planta que recibe luz, agua y CO₂ para producir oxígeno y glucosa.</li><p></p>
+                                <li><strong>🌍 Geografía - Ciclo del agua</strong> Animación de evaporación, condensación y precipitación de lluvia.</li><p></p>
+                                <li><strong>⚗️ Química - Cambio de estados de la materia</strong> Un bloque de hielo que se derrite en agua y luego se evapora con calor.</li><p></p>
+                                <li><strong>🔭 Física - Ley de la gravedad</strong> Un objeto que cae y rebota simulando aceleración por gravedad.</li><p></p>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="content-card">
+                        <h3>Producto Esperado</h3>
+                        <p>🧩<strong>Desafío: El Gatito Saltador de Energía</strong></p>
+                        <ul>
+                            <li style="text-align: justify;">Cuando presiones la bandera verde, la planta aparecerá con sus variables de Luz, Agua y CO₂ fijadas en 0. A lo largo de la simulación, si se presiona la tecla L, el sol enviará un mensaje para aumentar en 1 la variable Luz; si se presiona la tecla A, la nube enviará un mensaje para aumentar en 1 la variable Agua; y si se presiona la tecla C, la molécula de CO₂ enviará un mensaje para aumentar en 1 la variable CO₂. Cada tecla solo sumará una vez por pulsación, sin acumular valores excesivos. Cuando la planta tenga al menos 1 punto en cada variable, consumirá un punto de cada una, mostrará el mensaje “¡Produciendo oxígeno!” durante 2 segundos y reiniciará las variables a 0 para repetir el ciclo.</li>
+                        </ul>
+                        <div class="resource-grid">
+                            <div class="resource-item">
+                                <h4>Ver Ejemplo en Scratch</h4>
+                                <p>Proyecto: Simulación de Fotosíntesis</p>
+                                <a href="https://scratch.mit.edu/projects/1204802157/" target="_blank" class="btn btn-primary">Abrir Proyecto</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title">Adaptaciones Curriculares</h2>
+
+                <div class="content-grid">
+                
+                <!-- Ciclo VI -->
+                <div class="content-card">
+                    <h3>🔹 Ciclo VI (1° y 2° de secundaria)</h3>
+                    <p><strong>🧭 Enfoque:</strong> Exploración, observación y descubrimiento de fenómenos simples</p>
+                    <p><strong>🎯 Uso de Scratch por el docente:</strong> Crear recursos visuales interactivos que representen situaciones cotidianas o naturales para estimular la curiosidad y facilitar la comprensión.</p>
+                    
+                    <h4>✅ Ejemplos de materiales Scratch como apoyo en clase:</h4>
+                    <ul>
+                    <li><strong>Ciclo del agua:</strong> Animación con dibujos que muestran cómo el agua se evapora, se condensa y cae como lluvia. El docente puede hacer clic para avanzar cada etapa.</li><p></p>
+                    <li><strong>Cambios de estado del agua:</strong> Simulación donde el docente varía la temperatura y observa cambios en el estado del agua. Se usa como apoyo visual.</li><p></p>
+                    <li><strong>Rotación y traslación de la Tierra<:</strong> Simulación donde la Tierra gira sobre su eje (rotación = día y noche) y también alrededor del Sol (traslación = estaciones). Se muestran íconos de estaciones y zonas iluminadas.</li><p></p>
+                    </ul><p></p>
+
+                    <h4>🎓 En la sesión:</h4>
+                    <ul>
+                    <li>El recurso se presenta como parte del “conflicto cognitivo” o la explicación.</li>
+                    <li>Se detiene el recurso para preguntar, debatir, observar.</li>
+                    <li>Se puede repetir la simulación cambiando variables simples.</li>
+                    </ul>
+                </div>
+
+                <!-- Ciclo VII -->
+                <div class="content-card">
+                    <h3>🔹 Ciclo VII (3°, 4° y 5° de secundaria)</h3>
+                    <p><strong>🧭 Enfoque:</strong> Comprensión de sistemas, análisis de variables, pensamiento científico</p>
+                    <p><strong>🎯 Uso de Scratch por el docente:</strong> Diseñar simulaciones más complejas con múltiples variables y condiciones, que permitan al estudiante analizar causas, consecuencias y formular hipótesis.</p>
+                    
+                    <h4>✅ Ejemplos de materiales Scratch como apoyo en clase:</h4>
+                    <ul>
+                    <li><strong>Cambio climático:</strong> Simulación donde el docente ajusta “emisión de CO₂” y se ve el cambio en temperatura y nivel del mar.</li><p></p>
+                    <li><strong>Contaminación del agua:</strong> Recurso con varios elementos (residuos, peces, plantas) donde se muestra el efecto progresivo de la contaminación.</li><p></p>
+                    <li><strong>Ecosistemas y población:</strong> Recurso interactivo donde se muestra el crecimiento o disminución de especies según alimentación o depredadores.</li><p></p>
+                    </ul><p></p>
+
+                    <h4>🎓 En la sesión:</h4>
+                    <ul>
+                    <li>El recurso se utiliza como modelo visual de análisis.</li>
+                    <li>El docente cambia condiciones y fomenta el debate: “¿Qué pasaría si…?”</li>
+                    <li>Sirve como base para formular hipótesis o explicar un fenómeno.</li>
+                    </ul>
+                </div>
+
+                <!-- Adaptación Curricular -->
+                <div class="content-card">
+                    <h3>📘 ¿Cómo se adapta al Currículo?</h3>
+                    <ul>
+                    <li>
+                        <strong>Competencia: Explica el mundo físico basándose en conocimientos científicos</strong><br>
+                        Scratch permite representar fenómenos abstractos y complejos que serían difíciles de observar directamente. Facilita la visualización de modelos causales y el uso de variables, clave en esta competencia.
+                    </li>
+                    <li>
+                        <strong>Competencia: Indaga mediante métodos científicos</strong><br>
+                        Aunque el estudiante no experimente directamente con Scratch, observar simulaciones, plantear predicciones y validar ideas también forma parte del proceso de indagación.
+                    </li>
+                    </ul>
+                </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title">Planificación de Sesiones de Aprendizaje</h2>
+                
+                <div class="content-card">
+                    <h3>Estructura de Sesión Integrada</h3>
+                    <p>Una sesión de aprendizaje que integra Scratch con ciencias puede usar simulaciones y animaciones preparadas por el docente como recurso de apoyo para explicar fenómenos, facilitando la comprensión de conceptos científicos.</p>
+                    
+                    <h4>Momentos de la sesión:</h4>
+                    <div class="content-grid" style="margin-top: 1rem;">
+                        
+                        <!-- INICIO -->
+                        <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-orange);">
+                            <h5>INICIO (15 minutos)</h5>
+                            <ul>
+                                <li><strong>Contextualización:</strong> Presentar el fenómeno científico a investigar con una breve introducción (video, pregunta o situación problemática).</li>
+                                <li><strong>Saberes previos:</strong> Activar conocimientos científicos de los estudiantes con preguntas o ejemplos.</li>
+                                <li><strong>Propósito:</strong> Explicar objetivos de aprendizaje.</li>
+                                <li><strong>Motivación:</strong> Mostrar un fragmento inicial del material en Scratch como adelanto.</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- DESARROLLO -->
+                        <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent-green);">
+                            <h5>DESARROLLO (60 minutos)</h5>
+                            <ul>
+                                <li><strong>Exploración guiada con Scratch (20 min):</strong> El docente presenta y manipula la simulación o animación en Scratch para explicar el fenómeno.</li>
+                                <li><strong>Análisis y discusión (15 min):</strong> Los estudiantes interpretan lo observado y responden preguntas planteadas.</li>
+                                <li><strong>Profundización (20 min):</strong> Explicación teórica apoyada en el recurso de Scratch, resaltando causas, efectos y relaciones.</li>
+                                <li><strong>Aplicación breve (5 min):</strong> Actividad práctica o ejercicio escrito relacionado con lo visto.</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- CIERRE -->
+                        <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--base-color);">
+                            <h5>CIERRE (15 minutos)</h5>
+                            <ul>
+                                <li><strong>Socialización:</strong> Los estudiantes comparten conclusiones o respuestas clave.</li>
+                                <li><strong>Reflexión:</strong> Evaluar aprendizajes científicos y procedimentales.</li>
+                                <li><strong>Metacognición:</strong> Comentar cómo la simulación ayudó a comprender el concepto.</li>
+                                <li><strong>Transferencia:</strong> Plantear otros contextos donde se pueda aplicar lo aprendido.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-grid">
+                    <div class="resource-item">
+                        <h4>Plantilla de Sesión</h4>
+                        <p>Formato editable para planificar sesiones integrando Scratch como recurso didáctico en ciencias</p>
+                        <a href="#" class="btn btn-success">Descargar Plantilla</a>
+                    </div>
+                    
+                    <div class="resource-item">
+                        <h4>Ejemplo de Sesión</h4>
+                        <p>Sesión completa: "Explicando el Movimiento Rectilíneo Uniforme con Scratch"</p>
+                        <a href="#" class="btn btn-secondary">Ver Ejemplo</a>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        
+        <section class="content-section">
+            <div class="container">
+                <div class="text-center">
+                    <h3>Prepárate para Compartir</h3>
+                    <p>En la Sesión 4 Aprenderas a generar recursos de Scratch</p>
+                    <div style="margin-top: 2rem;">
+                        <a href="sesion2.html" class="btn btn-secondary" style="margin-right: 1rem;">← Sesión Anterior</a>
+                        <a href="sesion4.html" class="btn btn-primary">Continuar a Sesión 4 →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Facilitador</h3>
+                    <p><strong>Ing. Bragahm Jennsen Infantas Alcocer</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sesion1.html">Sesión 1</a></li>
+                        <li><a href="sesion2.html">Sesión 2</a></li>
+                        <li><a href="sesion3.html">Sesión 3</a></li>
+                        <li><a href="sesion4.html">Sesión 4</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Licencia</h3>
+                    <p>Este material está bajo licencia Creative Commons</p>
+                    <p>Compartir - Adaptar - Atribuir</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scratch Educativo. Material pedagógico para docentes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

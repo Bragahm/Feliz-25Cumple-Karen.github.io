@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA para generar recursos de Scratch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo flex items-center gap-3">
+                    <div class="scratch-icon-placeholder" style="width:32px; height:32px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                        <img src="assets/icono.png" alt="Ícono Scratch" style="width:24px; height:24px; object-fit:contain;">
+                    </div>
+                    <h1>Scratch Educativo</h1>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sesion1.html" class="nav-link">Sesión 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sesion2.html" class="nav-link">Sesión 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sesion3.html" class="nav-link">Sesión 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sesion4.html" class="nav-link active">Sesión 4</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Sesión 4: IA para generar recursos de Scratch</h1>
+                    <p class="hero-subtitle">La Inteligencia Artificial permite a educadores, estudiantes y desarrolladores generar recursos únicos y adaptados a sus proyectos en Scratch, como sprites con disfraces, fondos, sonidos, música y efectos, sin necesidad de ser expertos en diseño o edición. Estos recursos enriquecen los proyectos, mejoran la presentación visual y auditiva, y fomentan la creatividad y la personalización en entornos educativos.</p>
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="container">
+                <div class="objectives-list">
+                    <h3>Objetivos de Aprendizaje</h3>
+                    <ul>
+                        <li>Reconocer el potencial de la Inteligencia Artificial para crear recursos visuales y sonoros que complementen proyectos en Scratch.</li>
+                        <li>Explorar herramientas de IA accesibles para generar sprites con disfraces, fondos personalizados, sonidos, música y efectos adaptados a necesidades educativas.</li>
+                        <li>Aplicar la IA para enriquecer la presentación visual y auditiva de proyectos en Scratch, promoviendo experiencias más inmersivas y creativas.</li>
+                        <li>CFomentar la autonomía y creatividad docente mediante el uso de IA como apoyo en el diseño de materiales didácticos personalizados en entornos digitales.</li>
+                    </ul>
+                </div>
+            <div class="container">
+                  <div class="content-grid">
+                    <div class="content-card">
+                        <h3 style="text-align: center;">SPRITES (PERSONAJES, OBJETOS, ANIMALES, ETC.)</h3>
+                        <p style="text-align: justify;">En Scratch, los sprites son los personajes u objetos que realizan acciones en tus proyectos. Son los elementos visibles y programables que pueden moverse, hablar, cambiar de apariencia, detectar cosas, interactuar con otros sprites, entre muchas otras cosas.</p>
+                        
+                        <div class="media-container">
+                            <div class="media-placeholder">
+                                <img src="assets/gsprites.png" style="max-width:100%; height:auto; display: block;">
+                            </div>
+                        </div>
+
+                        <h4>Características principales de los sprites en Scratch:</h4>
+                        <ul>
+                            <li>• <strong>🧍‍♂️ Pueden ser personajes, animales, objetos, etc.</strong></li>
+                            <li>• 🎨 Cada sprite puede tener <strong>disfraces</strong> (apariencias diferentes que se pueden cambiar).</li>
+                            <li>• 🎭 Se pueden <strong>animar</strong> cambiando entre disfraces.</li>
+                            <li>• 🧠 Cada sprite tiene su <strong>propio conjunto de bloques de código</strong> (su comportamiento).</li>
+                            <li>• 📍 Pueden moverse, cambiar de tamaño, girar, detectar colisiones, emitir sonidos, etc.</li>
+                            <li>• 📦 Scratch ya incluye una <strong>biblioteca de sprites</strong>, pero también puedes <strong>dibujar el tuyo o subir una imagen</strong>.</li>
+                        </ul><p></p>
+                        
+
+                        
+                        <div class="resource-grid">
+                            <div class="resource-item">
+                                <h4>IA PARA GENERAR SPRITES</h4>
+                                <p>ChatGPT: Para la generación de sprites</p>
+                                <a href="https://chatgpt.com/" target="_blank" class="btn btn-primary">Ir a ChatGPT</a><P></P>
+                                <p>Photopea: Para la edición de sprites</p>
+                                <a href="https://www.photopea.com/" target="_blank" class="btn btn-primary">Ir a Photopea</a>
+                            </div>
+                        </div>
+                        <div class="media-container">
+                          <div class="media-placeholder">
+                              <p><strong>EJEMPLO DE PROMT:</strong> Generación de Sprites</p>
+                              <ul style="text-align: left; margin-top: 1rem;">
+                                  <li><strong>Genera</strong> una hoja de animación 2D estilo cartoon educativo, similar a los sprites de Scratch, con seis cuadros secuenciales del mismo personaje (gota de agua), organizados en dos filas (3 arriba y 3 abajo).</li>
+                                    <li><strong>Diseño general:</strong> Fondo neutro claro (color crema o gris claro), separación mínima de 30 px entre cuadros, personaje completamente visible y centrado en cada cuadro, sin recortes, proporciones uniformes, tamaño ajustado para que los seis cuadros quepan sin solapamientos. Estilo cartoon educativo: líneas gruesas, proporciones simples, colores planos y vibrantes.</li>
+                                    <li><strong>Personaje:</strong> Gota de agua azul celeste con bordes azul más oscuro, ojos grandes, expresivos y alegres, boca sonriente (con variaciones según la fase), pequeñas gotas satélite en algunas poses, estilo infantil, amigable, dinámico y educativo.</li>
+                                    <li><strong>Seis poses (ciclo del agua):</strong>
+                                        <ol>
+                                            <li><strong>Evaporación:</strong> Gota sonriente elevándose, ondas de calor ascendiendo.</li>
+                                            <li><strong>Ascenso:</strong> Gota subiendo más alto, expresión emocionada, nubecillas lejanas.</li>
+                                            <li><strong>Condensación:</strong> Gota abrazando a otras gotas, nube suave alrededor.</li>
+                                            <li><strong>Formación de nube:</strong> Gota dentro de nube densa, ojos semicerrados descansando.</li>
+                                            <li><strong>Precipitación:</strong> Gota cayendo rápidamente, líneas de velocidad, expresión feliz.</li>
+                                            <li><strong>Acumulación:</strong> Gota salpicando en un charco, brazos abiertos, gran sonrisa, lista para repetir el ciclo.</li>
+                                        </ol>
+                                    </li>
+                                    <li><strong>Vista final:</strong> Hoja de sprites completa con dos filas de tres cuadros, bordes definidos y separación clara.</li>
+                              </ul>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card">
+                        <h3 style="text-align: center;">FONDOS (ESCENARIOS)</h3>
+                        <p style="text-align: justify;">En Scratch, los fondos (también llamados escenarios o backdrops en inglés) son las imágenes de fondo que aparecen en el escenario donde se desarrolla tu proyecto. Es como el ambiente o lugar donde ocurre la acción: una playa, un bosque, una ciudad, una habitación, etc.</p>
+                        
+                        <div class="media-container">
+                            <div class="media-placeholder">
+                                <img src="assets/gfondos.png" style="max-width:100%; height:auto; display: block;">
+                            </div>
+                        </div>
+
+                        <h4>¿Qué se puede hacer con los fondos en Scratch?</h4>
+                        <ul>
+                            <li>• 🌞➡️🌙 Cambiar de fondo durante la historia o juego (por ejemplo, cambiar de día a noche)</li>
+                            <li>• 🔄 Tener varios fondos en un mismo proyecto y <strong>cambiar entre ellos con bloques</strong>.</li>
+                            <li>• 🎨Dibujar tu propio fondo o elegir uno de la <strong>biblioteca de Scratch</strong>.</li>
+                            <li>• 🎮Usar fondos para representar <strong>niveles</strong> o <strong>escenas diferentes</strong>.</li>
+                        </ul>
+                        <div class="resource-grid">
+                          <div class="resource-item">
+                            <h4>IA PARA GENERAR FONDOS (ESCENARIOS)</h4>
+                            <p>ChatGPT: Para la generación de Fondos</p>
+                            <a href="https://chatgpt.com/" target="_blank" class="btn btn-primary">Ir a ChatGPT</a><P></P>
+                            <p>Gemini: Para la generación de Fondos </p>
+                            <a href="https://gemini.google.com/" target="_blank" class="btn btn-primary">Ir a Gemini</a>
+                          </div>
+                        </div>
+                        <div class="media-container">
+                          <div class="media-placeholder">
+                              <p><strong>EJEMPLO DE PROMT:</strong> Generación de Fondos (Escenario)</p>
+                              <ul style="text-align: left; margin-top: 1rem;">
+                                  <li><strong>Genera</strong> un fondo de paisaje estilo cartoon educativo para Scratch.</li>
+                                    <li><strong>Estilo visual:</strong> Colores planos y vibrantes, líneas gruesas, proporciones simples.</li>
+                                    <li><strong>Elementos principales:</strong> 
+                                        <ul>
+                                            <li>Cielo azul claro degradado hacia el horizonte.</li>
+                                            <li>Colinas verdes suaves en la parte baja.</li>
+                                            <li>Río ancho que serpentea desde el fondo hacia el frente.</li>
+                                            <li>Árboles redondeados y sencillos repartidos a lo lejos.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Restricciones:</strong> Sin animales, sin personas, sin sol y sin nubes.</li>
+                                    <li><strong>Ambientación:</strong> Luminosa y alegre, con perspectiva amplia y espacio libre en el cielo para colocar elementos animados.</li>
+                                    <li><strong>Uso previsto:</strong> Escenario de animación infantil sobre el ciclo del agua.</li>
+                              </ul>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">             
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3 style="text-align: center;">SONIDOS Y MÚSICA</h3>
+                        <p style="text-align: justify;">En Scratch, los sonidos y la música permiten que tus proyectos sean más divertidos, expresivos e interactivos. Puedes usarlos para dar efectos especiales, hablar, poner música de fondo, o responder a acciones (como cuando un sprite salta o gana).</p>
+                        
+                        <div class="media-container">
+                            <div class="media-placeholder">
+                                <img src="assets/gmusica.png" style="max-width:100%; height:auto; display: block;">
+                            </div>
+                        </div>
+
+                        <h4>¿Qué se puede hacer con los Sonidos y Música en Scratch?</h4>
+                        <ul>
+                            <li>• 🔊<strong>Reproducir sonidos al hacer clic o presionar teclas: </strong> puedes hacer que suene algo cuando el usuario interactúe con el proyecto.</li>
+                            <li>• 🎶<strong>Agregar música de fondo:</strong> puedes poner música que acompañe una escena o nivel completo.</li>
+                            <li>• 🗣️<strong>Hacer que un personaje hable:</strong> puedes grabar tu voz o usar sonidos para que los sprites parezcan hablar.</li>
+                            <li>• 🎭<strong>Usar sonidos para mostrar emociones:</strong> como una risa, un grito, o una música triste o feliz según lo que ocurra.</li>
+                            <li>• 🧠<strong>Dar retroalimentación:</strong> usar sonidos para avisar si el jugador <strong>ganó, perdió o cometió un error</strong>.</li>
+                            <li>• 🎹<strong>Tocar notas musicales:</strong> puedes programar melodías usando notas y ritmos con los bloques de música.</li>
+                            <li>• 📚<strong>Elegir sonidos de la biblioteca:</strong> Experiencias diferentes cada vez</li>
+                            <li>• 🎤<strong>Grabar tus propios sonidos:</strong> puedes usar un micrófono para crear sonidos únicos o narraciones personalizadas.</li>
+                        </ul>                        
+                        <div class="resource-grid">
+                          <div class="resource-item">
+                            <h4>IA PARA GENERAR SONIDOS</h4>
+                            <p>ElevenLabs: Para la generación Eectos de Sonido</p>
+                            <a href="https://elevenlabs.io/" target="_blank" class="btn btn-primary">Ir a ElevenLabs</a><P></P>
+                            <p>Luvvoice: Convertir Texto a Voz </p>
+                            <a href="https://luvvoice.com/" target="_blank" class="btn btn-primary">Ir a Luvvoice</a>
+                          </div>
+                        </div>
+                        <div class="media-container">
+                          <div class="media-placeholder">
+                              <p><strong>EJEMPLO DE PROMT:</strong> Generación de Efectos de Audio</p>
+                              <ul style="text-align: left; margin-top: 1rem;">
+                                  <li><strong>Genera</strong> un sonido realista y limpio de agua en movimiento.</li>
+                                    <li><strong>Características:</strong> Tono suave y relajante, sin voces humanas y sin ruidos de fondo.</li>
+                                    <li><strong>Uso previsto:</strong> Proyecto educativo infantil sobre el ciclo del agua.</li>
+                                    <li><strong>Estructura del sonido:</strong> 
+                                        <ol>
+                                            <li>Comienza con un suave goteo.</li>
+                                            <li>Se transforma en un flujo ligero de agua.</li>
+                                            <li>Termina con un pequeño chapoteo.</li>
+                                        </ol>
+                                    </li>
+                                    <li><strong>Duración aproximada:</strong> 5 a 8 segundos.</li>
+                              </ul>
+                          </div>
+                        </div>
+                       </div>
+
+                    <div class="content-card">
+                        <h3 style="text-align: center;">IDEAS DE GUIONES, DIÁLOGOS Y TRAMAS</h3>
+                        <p style="text-align: justify;">Las ideas de guiones, diálogos y tramas son contenidos narrativos que estructuran qué ocurre en una historia o proyecto, cómo interactúan los personajes y cuál es el objetivo del juego o animación. Se usan para dar sentido, emoción y dirección a lo que se crea en Scratch.</p>
+                        <div class="media-container">
+                            <div class="media-placeholder">
+                                <img src="assets/gtramas.png" style="max-width:100%; height:auto; display: block;">
+                            </div>
+                        </div>
+
+                        <h4>¿Para qué sirven?</h4>
+                        <ul>
+                            <li>• 🎯 <strong>Explicar un tema paso a paso:</strong> Porque ayuda al estudiante a entender el proceso en orden</li>
+                            <li>• 💬<strong>Hacer que los personajes enseñen hablando:</strong> Porque los diálogos hacen que la explicación sea <strong>más entretenida</strong></li>
+                            <li>• 📚 <strong>Contar una historia:</strong> Porque una historia permite que el estudiante <strong>se conecte emocionalmente y recuerde mejor el contenido.</strong></li>
+                            <li>• 🧠<strong>Hacer pensar al estudiante:</strong> Porque promueve la <strong>participación activa.</strong></li>
+                            <li>• 🧩<strong>Mostrar cómo funciona algo:</strong> Porque ordena la información visualmente y ayuda a <strong>entender mejor los casos</strong></li>
+                        </ul>    
+                        <div class="resource-item">
+                            <h4>IA PARA GENERAR IDEAS DE GUIONES, DIÁLOGOS Y TRAMAS</h4>
+                            <p>ChatGPTs: Para la generación guiones, diálogos y tramas</p>
+                            <a href="https://chatgpt.com/" target="_blank" class="btn btn-primary">Ir a ChatGPT</a><P></P>
+                        </div>
+                        <div class="media-container">
+                            <div class="media-placeholder">
+                                <p><strong>EJEMPLO DE PROMT:</strong> Generación de Efectos de Audio</p>
+                                <ul style="text-align: left; margin-top: 1rem;">
+                                    <li><strong>Rol:</strong> Actúa como creador de historias y guiones para proyectos en Scratch que modelen fenómenos naturales.</li>
+                                    <li><strong>Objetivo:</strong> Generar una idea completa para un proyecto animado educativo y creativo dirigido a estudiantes de primaria o secundaria, centrado en el fenómeno natural del ciclo del agua.</li>
+                                    <li><strong>Incluye:</strong>
+                                        <ul>
+                                        <li><strong>Título sugerido:</strong> Nombre atractivo para el proyecto.</li>
+                                        <li><strong>Descripción del fenómeno natural principal:</strong> El ciclo del agua (evaporación, condensación, precipitación y escorrentía).</li>
+                                        <li><strong>Breve sinopsis:</strong> Máximo 5 líneas que expliquen cómo la historia presenta y enseña el fenómeno.</li>
+                                        <li><strong>Personajes principales:</strong> Humanos, animales o seres ficticios con una breve descripción de su rol.</li>
+                                        <li><strong>Diálogo extendido:</strong> Entre 7 y 10 líneas entre personajes que ilustren una interacción educativa y divertida sobre el ciclo del agua, con explicaciones simples y curiosidades.</li>
+                                        <li><strong>Escenas clave:</strong> De 3 a 5 escenas con breve descripción de lo que sucede en cada una para explicar el fenómeno.</li>
+                                        <li><strong>Posibles interacciones con el jugador:</strong> Ejemplos como elegir etapas, responder preguntas, manipular variables o recolectar objetos para explorar y aprender.</li>
+                                        <li><strong>Sugerencias de animaciones y visuales:</strong> Ideas simples, atractivas y fáciles de implementar en Scratch para visualizar el fenómeno.</li>
+                                        <li><strong>Lenguaje:</strong> Claro, ameno y divertido, para captar la atención de estudiantes y facilitar la comprensión científica mediante narrativa e interacción.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        
+
+        <section class="content-section">
+            <div class="container">
+                <div class="text-center">
+                    <h3>Prepárate para Compartir</h3>
+                    <p>En la Siguiente Sección Aprenderas sobre la Integración curricular</p>                    
+                    <div style="margin-top: 2rem;">
+                        <div style="margin-top: 2rem;">
+                            <a href="sesion3.html" class="btn btn-secondary" style="margin-right: 1rem;">← Sesión Anterior</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Facilitador</h3>
+                    <p><strong>Ing. Bragahm Jennsen Infantas Alcocer</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sesion1.html">Sesión 1</a></li>
+                        <li><a href="sesion2.html">Sesión 2</a></li>
+                        <li><a href="sesion3.html">Sesión 3</a></li>
+                        <li><a href="sesion4.html">Sesión 4</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Licencia</h3>
+                    <p>Este material está bajo licencia Creative Commons</p>
+                    <p>Compartir - Adaptar - Atribuir</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Scratch Educativo. Material pedagógico para docentes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
